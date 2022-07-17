@@ -2,6 +2,8 @@ body {
     background-color: #fafafa;
     font-family: 'Nunito', sans-serif;
     padding-top: 50px;
+    height: 100%;
+    margin: 0;
 }
 
 h1,
@@ -125,6 +127,17 @@ label {
     padding: 20px;
 }
 
+footer {
+    background-color: #ebcdcd;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    height: 32px;
+}
+
 .social-media-footer {
     display: inline-block;
     position: absolute;
@@ -144,7 +157,7 @@ label {
     font-family: fontawesome;
     position: relative;
     display: inline-block;
-    width: 40px;
+    width: 50px;
     height: 28px;
     padding-top: 12px;
     margin: 0 2px;
