@@ -26,30 +26,21 @@
         {% if task.complete %}
         <div class="task-title">
             <div class="task-complete-icon"></div>
-            <i><s><a href="">{{ task }}</a></s></i>
+            <i><s><a href="{% url 'task-update' task.id %}">{{ task }}</a></s></i>
         </div>
-        {% endif %}
+        <a class="delete-link" href="{% url 'task-delete' task.id %}">&#215;</a> {% else %}
+        <div class="task-title">
+            <div class="task-incomplete-icon"></div>
+            <a href="{% url 'task-update' task.id %}">{{ task }}</a>
+        </div>
+
+        <a class="delete-link" href="{% url 'task-delete' task.id %}">&#215;</a> {% endif %}
     </div>
-    {% empty %} {% endfor %}
 
-</div>
-
-
-<table>
-    <tr>
-        <th>Item</th>
-        <th></th>
-    </tr>
-    {% for task in tasks %}
-    <tr>
-        <td>{{task.title}}</td>
-        <td><a href="{% url 'task-update' task.id %}">Edit</a></td>
-        <td><a href="{% url 'task-delete' task.id %}">Delete</a></td>
-
-    </tr>
     {% empty %}
     <h3>No items in list</h3>
 
     {% endfor %}
-</table>
+</div>
+
 {% endblock content %}
