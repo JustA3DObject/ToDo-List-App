@@ -190,3 +190,9 @@ label {
     bottom: -5px;
     left: 40px;
 }
+
+.social-media-footer a:hover span {
+    bottom: 50px;
+    visibility: visible;
+    opacity: 1;
+}
