@@ -237,7 +237,7 @@ footer {
     content: '\f099';
 }
 
-@media (max-width:600px) {
+@media (max-width:694px) {
     footer {
         height: 42px;
     }
