@@ -54,3 +54,10 @@ h6 {
     color: #4b5156;
     margin-left: 10px;
 }
+
+.task-complete-icon {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(105, 192, 105);
+    border-radius: 50%;
+}
