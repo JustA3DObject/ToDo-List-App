@@ -154,3 +154,7 @@ label {
     transition: all .5s;
     -webkit-font-smoothing: antialiased;
 }
+
+.social-media-footer a:hover {
+    background: #ef92a3;
+}
