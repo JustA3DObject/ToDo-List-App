@@ -76,3 +76,8 @@ h6 {
     font-size: 22px;
     line-height: 0;
 }
+
+.search-form {
+    display: flex;
+    margin-top: 20px;
+}
