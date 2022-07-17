@@ -236,3 +236,12 @@ footer {
 .social-media-footer a:nth-of-type(6):before {
     content: '\f099';
 }
+
+@media (max-width:600px) {
+    footer {
+        height: 42px;
+    }
+    .social-media-footer {
+        display: flex;
+    }
+}
