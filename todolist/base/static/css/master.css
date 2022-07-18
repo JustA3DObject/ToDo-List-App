@@ -4,6 +4,7 @@ body {
     padding-top: 50px;
     height: 100%;
     margin: 0;
+    z-index: 1;
 }
 
 h1,
@@ -16,12 +17,13 @@ h6 {
 }
 
 .container {
+    display: grid;
     max-width: 550px;
     margin: auto;
     background-color: #fff;
     -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
     box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
-    ;
+    z-index: 1;
 }
 
 .header-bar {
@@ -127,7 +129,7 @@ label {
     padding: 20px;
 }
 
-footer {
+.footer {
     background-color: #ebcdcd;
     position: absolute;
     right: 0;
@@ -136,6 +138,7 @@ footer {
     padding: 1rem;
     text-align: center;
     height: 32px;
+    z-index: -1;
 }
 
 .social-media-footer {
@@ -242,6 +245,7 @@ footer {
         height: 42px;
     }
     .social-media-footer {
-        display: flex;
+        display: inline-flex;
+        display: sticky;
     }
 }
